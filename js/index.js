@@ -1,7 +1,7 @@
 /**
   Breaking Bad
 
-  A tribute to the best fucking series in the world. 
+  A tribute to the best fucking series in the world.
 
   The making of: http://timpietrusky.com/breaking-bad-logo
 
@@ -11,7 +11,7 @@
   Photoshop (path) and Illustrator (SVG).
 
   The original Logo is © by American Movie Classics Company LLC.
-  
+
 
   2012 by Tim Pietrusky
   timpietrusky.com
@@ -19,7 +19,7 @@
 
 /**
  * @Gray Ghost Visuals: The theme is for you!
- * 
+ *
  * Thanks to televisiontunes.com for the Breaking Bad theme
  * http://www.televisiontunes.com/Breaking_Bad.html
  */
@@ -27,9 +27,9 @@ var audio = $('audio').get(0),
     _paused = $('svg[role="paused"]'),
     _playing = $('svg[role="playing"]');
 
-audio.src = Modernizr.audio.ogg ? 
-  'http://timpietrusky.com/cdn/breaking_bad_intro.ogg' : 
-  'http://timpietrusky.com/cdn/breaking_bad_intro.mp3';
+audio.src = Modernizr.audio.ogg ?
+  'media/breaking_bad_intro.ogg' :
+  'media/breaking_bad_intro.mp3';
 
 _paused.click(function() {
   $(this).css('display', 'none');
@@ -96,9 +96,9 @@ function init() {
         img_smoke_2 = new Image(),
         img_smoke_3 = new Image();
 
-    img_smoke_1.src = 'http://timpietrusky.com/cdn/smoke_1.png';
-    img_smoke_2.src = 'http://timpietrusky.com/cdn/smoke_2.png';
-    img_smoke_3.src = 'http://timpietrusky.com/cdn/smoke_3.png';
+    img_smoke_1.src = 'media/smoke_1.png';
+    img_smoke_2.src = 'media/smoke_2.png';
+    img_smoke_3.src = 'media/smoke_3.png';
 
     smoke_1.m_alpha = 0.2;
     smoke_3.m_speed = 0.001;
@@ -290,6 +290,6 @@ function render() {
     if (windVelocity < 0.0) {
         windVelocity = 0.0;
     }
-  
+
     requestAnimFrame(render);
 }
